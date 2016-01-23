@@ -1,4 +1,4 @@
 # turbo-log
 This is a simple API to save stuff and do stuff with that stuff.
 
-Edit text test
+Edit text tests
