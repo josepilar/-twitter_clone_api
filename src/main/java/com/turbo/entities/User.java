@@ -3,7 +3,6 @@ package com.turbo.entities;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
@@ -12,10 +11,9 @@ import javax.persistence.Table;
 @Table(name="users", indexes = {@Index(name="PRIMARY", columnList="user_id")})
 public class User {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue
 	@Column(name = "user_id")
 	private Integer userId;
-	
 	
 	@Column(name = "username", nullable = false)
 	private String userName;
