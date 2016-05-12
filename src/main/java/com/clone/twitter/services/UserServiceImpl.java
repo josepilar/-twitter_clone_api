@@ -1,14 +1,11 @@
-package com.turbo.services;
+package com.clone.twitter.services;
 import java.util.List;
-
-import javax.inject.Inject;
-import javax.inject.Named;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.turbo.entities.User;
-import com.turbo.repository.UserRepository;
+import com.clone.twitter.entities.User;
+import com.clone.twitter.repositories.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -28,7 +25,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User saveUser(User user) {
-		return userRepository.save(user);
+		return (User) userRepository.save(user);
 	}
-	
+
 }

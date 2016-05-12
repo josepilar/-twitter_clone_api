@@ -1,4 +1,4 @@
-package com.turbo.controllers;
+package com.clone.twitter.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

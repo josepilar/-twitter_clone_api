@@ -1,8 +1,8 @@
-package com.turbo.services;
+package com.clone.twitter.services;
 
 import java.util.List;
 
-import com.turbo.entities.User;
+import com.clone.twitter.entities.User;
 
 public interface UserService {
 
